@@ -1,6 +1,3 @@
-// script.js
-const orders = document.querySelectorAll("dl");
-
 /**
  * Gets the "dd" element node from the HTML DOM and returns it.
  * @param {string} item Data attribute name without the 'data-' prefix.
@@ -38,6 +35,8 @@ const modifyTextContent = function (orders, orderNum) {
 		orders[item].textContent = attributeValue(item, orderNum);
 	}
 };
+
+const orders = document.querySelectorAll("dl");
 
 const orderOne = {
 	biscuits: getElement("biscuits", 1),
